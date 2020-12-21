@@ -1,6 +1,6 @@
 using jlmie
 using Test
 
-@testset "jlmie.jl" begin
+@testset "jlmie" begin
     # Write your tests here.
 end
