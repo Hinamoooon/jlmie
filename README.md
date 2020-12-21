@@ -61,7 +61,7 @@ plot(lbdp,Qsca,
 Some examples are included in `./code/examples`.
 - `Qsca_n4r75.jl` calculates total scattering efficiency spectrum of a high-refractive-index nanosphere (n = 4) of 75 nm in radius.
 - `QscaMultipoles_n4r100.jl` calculates total scattering efficiency of a sphere with n = 4 and r = 100 nm and each contribution from n-th order electric and magnetic Mie resonance.
-![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/main/result/QscaMultipoles_n4r100.png?raw=true)
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/QscaMultipoles_n4r100.png?raw=true)
 
 # License
 jlmie is distributed under MIT license.
