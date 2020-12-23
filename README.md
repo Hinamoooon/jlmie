@@ -66,15 +66,15 @@ plot(lbdp,Qsca,
 
 # Examples
 Some example codes are included in `./example`.
-- `ex01_Qsca_n4r100.jl` calculates total scattering efficiency spectrum of a high-refractive-index nanosphere (n = 4) of 100 nm in radius.
+- `ex01_Qsca_n4r100.jl` calculates total scattering efficiency spectrum of a high-refractive-index nanosphere (n = 4) of 100 nm in radius.  
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex01_Qsca_n4r100.png?raw=true)
-- `ex02_QscaMultipoles_n4r100.jl` calculates total scattering efficiency of a sphere with n = 4 and r = 100 nm and each contribution from n-th order electric and magnetic Mie resonance.
+- `ex02_QscaMultipoles_n4r100.jl` calculates total scattering efficiency of a sphere with n = 4 and r = 100 nm and each contribution from n-th order electric and magnetic Mie resonance.  
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex02_QscaMultipoles_n4r100.png?raw=true)
-- `ex03_ForwardBackward_n4r100.jl` calculates forward (θ = 0°) and backward (θ = 180°) scattering intensities.
+- `ex03_ForwardBackward_n4r100.jl` calculates forward (θ = 0°) and backward (θ = 180°) scattering intensities.  
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
-- `ex04_2DRadiationPattern_n4r100.jl` calculates far-field radiation patterns at a fixed wavelength.
+- `ex04_2DRadiationPattern_n4r100.jl` calculates far-field radiation patterns at a fixed wavelength.  
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex04_2DRadiationPattern_n4r100.png?raw=true)
-- `ex05_3DRadiationPattern_n4r100.jl` is a 3D version of ex04 which calculates radiation pattern.
+- `ex05_3DRadiationPattern_n4r100.jl` is a 3D version of ex04 which calculates radiation pattern.  
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex05_3DRadiationPattern_n4r100.png?raw=true)
 
 # Directory structure [To be updated]
