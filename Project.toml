@@ -1,7 +1,7 @@
 name = "jlmie"
 uuid = "83f16f31-eeab-45e4-be0e-7fc4231b6e5b"
 authors = ["Tatsuki Hinamoto"]
-version = "0.1.0"
+version = "1.0.0"
 
 [deps]
 SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
