@@ -3,7 +3,7 @@
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://Hinamoooon.github.io/jlmie/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://Hinamoooon.github.io/jlmie/dev)
 -->
-![CI](https://github.com/Hinamoooon/jlmie/workflows/CI/badge.svg)
+[![CI](https://github.com/Hinamoooon/jlmie/workflows/CI/badge.svg)](https://github.com/Hinamoooon/jlmie/actions?query=workflow%3ACI)
 [![Build Status](https://travis-ci.com/Hinamoooon/jlmie.svg?branch=master)](https://travis-ci.com/Hinamoooon/jlmie)
 
 Julia implementation of Mie theory for nanophotonics.[[1]](#reference)  
