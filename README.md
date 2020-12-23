@@ -45,6 +45,7 @@ radius = 75*1e-9
 
 # vacuum wavelenth range to be calculated
 lbd0 = (400:800)*1e-9;
+lbdp = lbdp*1e9;  # used for plot
 ```
 3. calculation
 ```
@@ -90,5 +91,6 @@ jlmie is distributed under MIT license.
 1. Absorption and Scattering of Light by Small Particles; Bohren, C. F., Huffman, D. R., Eds.; Wiley-VCH Verlag GmbH: Weinheim, Germany, 1998.
 
 # To do list
+- read wavelength dependent refractive indices
 - Computation of near-field profiles
 - Detailed documents describing theoretical backgrounds
