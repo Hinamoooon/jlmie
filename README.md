@@ -5,30 +5,23 @@
 [![Build Status](https://travis-ci.com/Hinamoooon/jlmie.jl.svg?branch=master)](https://travis-ci.com/Hinamoooon/jlmie)
 
 Julia implementation of Mie theory for nanophotonics.[[1]](#reference)  
-This project is under development.  
 Author is checking the validity of the implementation as much as possible, but any warranty is not provided.  
+This project is under development. Because jlmie is just a transported program from author's homebuilt package written in different language, its implementation might not be optimized for Julia language...
 
-# Required packages
-- `SpecialFunctions` for computation of Bessel functions
-- `Plots` and `PyPlot` for visualization
+# Recommended packages
+Installation of following packages are recommended to visualize calculated results. Example codes in `./example` require prior installation of them.
+- `Plots` for visualization
+- `PyPlot` for visulization of 3D graphs
 
 Use Julia Package Manager (]) and run
 ```
-(@v1.5) pkg> add SpecialFunctions Plots PyPlot
+(@v1.5) pkg> add Plots PyPlot
 ```
 
 # How to use
-Important functions are included in `./code/src/jlmie.jl`. After downloading or cloning jlmie, above file need to be included, for example, by
-```
-include "jlmie\\code\\src\\jlmie.jl"
-```
-Note that this expression is valid for Windows users. Mac or Linux users need to rewrite it according to your environment.  
-
-# Example
 1. import packages
 ```
-include "..\\src\\jlmie.jl"  # correct appropreately depending on where you are
-using SpecialFunctions
+using jlmie
 using Plots
 ```
 2. define problem
@@ -58,10 +51,25 @@ plot(lbdp,Qsca,
 )
 ```
 
-Some examples are included in `./code/examples`.
-- `Qsca_n4r75.jl` calculates total scattering efficiency spectrum of a high-refractive-index nanosphere (n = 4) of 75 nm in radius.
-- `QscaMultipoles_n4r100.jl` calculates total scattering efficiency of a sphere with n = 4 and r = 100 nm and each contribution from n-th order electric and magnetic Mie resonance.
-![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/QscaMultipoles_n4r100.png?raw=true)
+# Examples
+Some example codes are included in `./example`.
+- `ex01_Qsca_n4r100.jl` calculates total scattering efficiency spectrum of a high-refractive-index nanosphere (n = 4) of 100 nm in radius.
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex01_Qsca_n4r100.png?raw=true)
+- `ex02_QscaMultipoles_n4r100.jl` calculates total scattering efficiency of a sphere with n = 4 and r = 100 nm and each contribution from n-th order electric and magnetic Mie resonance.
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex02_QscaMultipoles_n4r100.png?raw=true)
+- `ex03_ForwardBackward_n4r100.jl` calculates forward (θ = 0°) and backward (θ = 180°) scattering intensities.
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
+- `ex04_2DRadiationPattern_n4r100.jl` calculates far-field radiation patterns at a fixed wavelength.
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
+- `ex05_3DRadiationPattern_n4r100.jl` is a 3D version of ex04 which calculates radiation pattern.
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
+
+# Directory structure [To be updated]
+Important functions are included in `./src`. If you want to see source codes of any functions, see `./src/jlmie.jl`. 
+
+# Dependence
+jlmie depends on following packages.
+- `SpecialFunctions` for computation of Bessel functions
 
 # License
 jlmie is distributed under MIT license.
