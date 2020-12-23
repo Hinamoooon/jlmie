@@ -1,14 +1,25 @@
 # jlmie
-
+<!--
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://Hinamoooon.github.io/jlmie/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://Hinamoooon.github.io/jlmie/dev)
+-->
 [![Build Status](https://travis-ci.com/Hinamoooon/jlmie.svg?branch=master)](https://travis-ci.com/Hinamoooon/jlmie)
 
 Julia implementation of Mie theory for nanophotonics.[[1]](#reference)  
 Author is checking the validity of the implementation as much as possible, but any warranty is not provided.  
 This project is under development. Because jlmie is just a transported program from author's homebuilt package written in different language, its implementation might not be optimized for Julia language...
 
-# Recommended packages
+# Installation
+Use Julia Package Manager (]) and run
+```
+(@v1.5) pkg> add https://github.com/Hinamoooon/jlmie.git
+```
+
+# Dependency
+jlmie depends on a following package.
+- `SpecialFunctions` for computation of Bessel functions
+
+# Recommendation
 Installation of following packages are recommended to visualize calculated results. Example codes in `./example` require prior installation of them.
 - `Plots` for visualization
 - `PyPlot` for visulization of 3D graphs
@@ -19,7 +30,8 @@ Use Julia Package Manager (]) and run
 ```
 
 # How to use
-[To be updated once it is published in the Julia's public repositry]
+[To be updated once it is published in the Julia's public repositry]  
+Install jlmie following the [Installation section](#installation).
 1. import packages
 ```
 using jlmie
@@ -68,9 +80,8 @@ Some example codes are included in `./example`.
 # Directory structure [To be updated]
 Important functions are included in `./src`. If you want to see source codes of any functions, see `./src/jlmie.jl`. 
 
-# Dependence
-jlmie depends on following packages.
-- `SpecialFunctions` for computation of Bessel functions
+# Author
+Tatsuki Hinamoto@Kobe University, Japan
 
 # License
 jlmie is distributed under MIT license.
