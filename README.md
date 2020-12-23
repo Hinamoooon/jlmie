@@ -60,9 +60,9 @@ Some example codes are included in `./example`.
 - `ex03_ForwardBackward_n4r100.jl` calculates forward (θ = 0°) and backward (θ = 180°) scattering intensities.
 ![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
 - `ex04_2DRadiationPattern_n4r100.jl` calculates far-field radiation patterns at a fixed wavelength.
-![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex04_2DRadiationPattern_n4r100.png?raw=true)
 - `ex05_3DRadiationPattern_n4r100.jl` is a 3D version of ex04 which calculates radiation pattern.
-![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex03_ForwardBackward_n4r100.png?raw=true)
+![Output example in jlmie](https://github.com/Hinamoooon/jlmie/blob/master/result/ex05_3DRadiationPattern_n4r100.png?raw=true)
 
 # Directory structure [To be updated]
 Important functions are included in `./src`. If you want to see source codes of any functions, see `./src/jlmie.jl`. 
@@ -76,3 +76,7 @@ jlmie is distributed under MIT license.
 
 # Reference
 1. Absorption and Scattering of Light by Small Particles; Bohren, C. F., Huffman, D. R., Eds.; Wiley-VCH Verlag GmbH: Weinheim, Germany, 1998.
+
+# To do list
+- Computation of near-field profiles
+- Detailed documents describing theoretical backgrounds
