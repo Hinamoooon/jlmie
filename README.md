@@ -48,7 +48,7 @@ radius = 75*1e-9
 
 # vacuum wavelenth range to be calculated
 lbd0 = (400:800)*1e-9;
-lbdp = lbdp*1e9;  # used for plot
+lbdp = lbd0*1e9;  # used for plot
 ```
 3. calculation
 ```
