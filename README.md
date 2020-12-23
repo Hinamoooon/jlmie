@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/323283354/7572ec00-4553-11eb-8f5d-2978b93331aa" width=50%>
+<img src="https://repository-images.githubusercontent.com/323283354/7572ec00-4553-11eb-8f5d-2978b93331aa" width=75%>
 
 <!-- # jlmie -->
 <!--
