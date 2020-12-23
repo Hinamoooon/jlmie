@@ -1,9 +1,6 @@
-# import needed packages
-# for jlmie.jl
-include("..\\src\\jlmie.jl")
-using SpecialFunctions
-# for this script
+using jlmie
 using Plots
+pyplot()
 
 # settings
 # structure
@@ -44,7 +41,6 @@ mat_z = Isff.* (cos.(theta) * cos.(phi*0)')
 # mat_z = 1 .* (cos.(theta) * cos.(phi*0)')
 
 # show results
-pyplot()
 plt = plot(mat_x,mat_y,mat_z,
            st=:surface,
            camera=(45,30), # azimuth, elevate

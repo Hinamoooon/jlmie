@@ -1,3 +1,5 @@
+# export jlmie_mx, jlmie_abcd, jlmie_pt, jlmie_S12
+
 function jlmie_abcd(m,x,n::Int)
 # calculate n-th order Mie coefficients a,b,c,d
 # input:

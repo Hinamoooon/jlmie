@@ -1,3 +1,5 @@
+# export jlmie_Isff, jlmie_Isff_EM_n
+
 function jlmie_Isff_EM_n(nmat,radius,lbd0,nenv,theta,phi,n)
 # calculate far-feild intensity of scattered field
 # from n-th order Electric and Magnetic multipoles separately

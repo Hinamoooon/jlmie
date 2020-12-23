@@ -1,8 +1,4 @@
-# import needed packages
-# for jlmie.jl
-include("..\\src\\jlmie.jl")
-using SpecialFunctions
-# for this script
+using jlmie
 using Plots
 
 # settings

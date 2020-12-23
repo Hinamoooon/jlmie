@@ -1,3 +1,5 @@
+# export jlmie_Qsca, jlmie_Qsca_a_n, jlmie_Qsca_b_n
+
 function jlmie_Qsca(m,x,nmax::Int=-1)
 # Calculate scattering efficiency of a sphere
 # Input:

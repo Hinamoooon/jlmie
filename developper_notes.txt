@@ -1,0 +1,6 @@
+D:\\Documents\\GitHub\\jlmie
+cd("D:\\Documents\\GitHub\\jlmie")
+
+
+パッケージの作り方，project.tomlやテストの参考．
+https://qiita.com/cometscome_phys/items/989389db3540ebd9e026
