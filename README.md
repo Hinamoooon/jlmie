@@ -19,6 +19,7 @@ Use Julia Package Manager (]) and run
 ```
 
 # How to use
+[To be updated once it is published in the Julia's public repositry]
 1. import packages
 ```
 using jlmie
