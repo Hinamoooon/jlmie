@@ -57,7 +57,7 @@ plt = plot(mat_x,mat_y,mat_z,
 display(plt)
 
 # save
-if true
+if false
     runningfilename = splitext(splitpath(@__FILE__)[end])[1]
     outfilename = ".\\result\\" * runningfilename
     savefig(plt,outfilename)

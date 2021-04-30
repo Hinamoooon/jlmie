@@ -27,7 +27,7 @@ plot!(theta, taun, proj=:polar,label="tau")
 display(plt)
 
 # save
-if true
+if false
     runningfilename = splitext(splitpath(@__FILE__)[end])[1]
     outfilename = ".\\result\\" * runningfilename
     savefig(plt,outfilename)
