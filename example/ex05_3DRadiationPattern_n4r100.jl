@@ -18,8 +18,8 @@ lbd0 = 918*1e-9  # 1nd Kerker
 lbdp = lbd0.*1e9
 
 # angular range
-theta = range(0,π,length=37) # per 5 degrees with length 37
-phi = range(0,2π,length=73) # per 5 degrees with length 73
+theta = range(0,π,length=73) # per 2.5 degrees with length 73
+phi = range(0,2π,length=145) # per 2.5 degrees with length 145
 
 # other settings
 nmax = -1  # -1: namx large enough (determined from x)
@@ -35,34 +35,20 @@ mat_x = Isff.* (sin.(theta) * cos.(phi)')
 mat_y = Isff.* (sin.(theta) * sin.(phi)')
 mat_z = Isff.* (cos.(theta) * cos.(phi*0)')
 
-# Just a sphere
-# mat_x = 1 .* (sin.(theta) * cos.(phi)')
-# mat_y = 1 .* (sin.(theta) * sin.(phi)')
-# mat_z = 1 .* (cos.(theta) * cos.(phi*0)')
-
 # show results
 plt = plot(mat_x,mat_y,mat_z,
-           st=:surface,
-           camera=(45,30), # azimuth, elevate
-           xlabel="x",
-           ylabel="y",
-           zlabel="z",
-           xlims=(-1,1),
-           ylims=(-1,1),
-           zlims=(-1,1),
+        fill_z=abs.(Isff),
+        st=:surface,
+        camera=(45,30), # azimuth, elevate
+        xlabel="x",
+        ylabel="y",
+        zlabel="z",
+        # colorbar_title="Scattering intensity (arb. units)",
+        xlims=(-1,1),
+        ylims=(-1,1),
+        zlims=(-1,1),
 )
 display(plt)
-
-## Followings are plots with Plots
-# plt = plot(theta,phi,mat_z', st=:surface,
-#            xlims = (-5,5),
-#            ylims = (-5,5),
-#            zlims = (-5,5),
-# )
-# plt = plot(theta,phi,mat_z', marker=:circle )
-# plt = plot(theta,phi,mat_z')
-# plt = plot(theta,phi,Isff')
-# plt = plot(theta,phi,mat_z', st=:heatmap)
 
 # save
 if true

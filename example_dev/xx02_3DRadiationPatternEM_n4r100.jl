@@ -44,15 +44,18 @@ mat_z = Isff.* (cos.(theta) * cos.(phi*0)')
 
 # show results
 pyplot()
+# show results
 plt = plot(mat_x,mat_y,mat_z,
-           st=:surface,
-           camera=(30,30), # azimuth, elevate
-           xlabel="x",
-           ylabel="y",
-           zlabel="z",
-           xlims=(-1,1),
-           ylims=(-1,1),
-           zlims=(-1,1),
+        fill_z=abs.(Isff),
+        st=:surface,
+        camera=(45,30), # azimuth, elevate
+        xlabel="x",
+        ylabel="y",
+        zlabel="z",
+        # colorbar_title="Scattering intensity (arb. units)",
+        xlims=(-1,1),
+        ylims=(-1,1),
+        zlims=(-1,1),
 )
 display(plt)
 
